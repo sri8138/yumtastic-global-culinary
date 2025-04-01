@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Foodify custom colors
+				foodify: {
+					primary: '#FF6B35',
+					secondary: '#C5283D',
+					accent: '#FFC09F',
+					neutral: '#F9F7F3',
+					dark: '#2B2D42'
 				}
 			},
 			borderRadius: {
