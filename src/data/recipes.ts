@@ -1,3 +1,4 @@
+
 import { Recipe } from '@/types';
 
 export const recipes: Recipe[] = [
@@ -502,4 +503,17 @@ export const recipes: Recipe[] = [
     instructions: [
       'Cut pork shoulder into 2-inch chunks.',
       'In a blender, combine achiote paste, bitter orange juice (or mix of equal parts orange, lime, and grapefruit juice), lime juice, crushed garlic, oregano, cumin, allspice, cloves, and salt. Blend until smooth.',
-      'Pour marinade over pork chunks, making sure all pieces are well-coated. Cover and refrigerate for 4-24
+      'Pour marinade over pork chunks, making sure all pieces are well-coated. Cover and refrigerate for 4-24 hours.',
+      'Preheat oven to 325°F (165°C).',
+      'Line a large Dutch oven or roasting pan with banana leaves (if available).',
+      'Add marinated pork and any remaining marinade. Cover with more banana leaves.',
+      'Cover tightly with a lid or foil and bake for 4 hours, or until pork is very tender and easily shreds.',
+      'Meanwhile, prepare pickled onions: Thinly slice red onion and place in a bowl. Cover with boiling water for 1 minute, then drain.',
+      'Add lime juice and a pinch of salt to the onions. Let sit for at least 30 minutes.',
+      'For habanero salsa: Roast habaneros, then blend with lime juice, orange juice, and salt.',
+      'When pork is done, shred with two forks, mixing with the cooking juices.',
+      'Serve on warm corn tortillas, topped with pickled onions and habanero salsa (use sparingly as it\'s very hot).'
+    ],
+    ratings: 4.8
+  }
+]
