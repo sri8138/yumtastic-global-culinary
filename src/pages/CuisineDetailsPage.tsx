@@ -6,6 +6,8 @@ import RecipeCard from '@/components/recipe/RecipeCard';
 import { Country } from '@/types';
 import { countries } from '@/data/countries';
 import { recipes } from '@/data/recipes';
+import { Badge } from '@/components/ui/badge';
+import { BookOpen } from 'lucide-react';
 
 const CuisineDetailsPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -80,9 +82,15 @@ const CuisineDetailsPage = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
           <div className="absolute bottom-0 left-0 p-8 text-white">
-            <h1 className="text-4xl font-bold mb-2 flex items-center">
-              {country.flag} {country.name} Cuisine
-            </h1>
+            <div className="flex items-center gap-3 mb-2">
+              <h1 className="text-4xl font-bold flex items-center">
+                {country.flag} {country.name} Cuisine
+              </h1>
+              <Badge className="ml-2 flex items-center gap-1" variant="secondary">
+                <BookOpen className="h-4 w-4" />
+                <span>{cuisineRecipes.length} recipes available</span>
+              </Badge>
+            </div>
             <p className="max-w-2xl text-white/90">
               {country.description}
             </p>
@@ -91,8 +99,11 @@ const CuisineDetailsPage = () => {
         
         {/* Recipes Section */}
         <div className="mb-10">
-          <h2 className="text-2xl font-bold mb-6">
+          <h2 className="text-2xl font-bold mb-6 flex items-center">
             Popular {country.name} Recipes
+            <span className="text-sm ml-2 font-normal text-gray-500">
+              ({cuisineRecipes.length} recipes)
+            </span>
           </h2>
           
           {cuisineRecipes.length > 0 ? (
